@@ -1,0 +1,77 @@
+{
+  "form_name": "Basic Form",
+  "form_style": {
+    "width": "600px",
+    "margin": "0 auto",
+    "border": "1px solid #000",
+    "padding": "20px"
+  },
+  "form_fields": [
+    {
+      "field_name": "SSN",
+      "field_type": "text",
+      "required": true,
+      "sensitive": true,
+      "custom_validator_method": "DKCPRChecker",
+      "meta": {
+        "weight": -1
+      }
+    },
+    {
+      "field_name": "First Name",
+      "field_type": "text",
+      "required": true,
+      "prefill": "John",
+      "meta": {
+        "weight": 10
+      }
+    },
+    {
+      "field_name": "Last Name",
+      "field_type": "text",
+      "required": true,
+      "prefill": "Rambo",
+      "meta": {
+        "weight": 20
+      }
+    },
+    {
+      "field_name": "Email",
+      "field_type": "email",
+      "required": true,
+      "meta": {
+        "weight": ""
+      }
+    },
+    {
+      "field_name": "Phone_Number",
+      "field_type": "number",
+      "required": false,
+      "meta": {
+        "weight": "last"
+      }
+    },
+    {
+      "field_name": "Message",
+      "field_type": "textarea",
+      "required": false,
+      "meta": {
+        "exclude": "yes",
+        "weight": "999"
+      },
+      "field_style": {
+        "display": "none"
+      }
+    }
+  ],
+  "form_buttons": [
+    {
+      "button_name": "Submit",
+      "on_click": "formSubmit()"
+    },
+    {
+      "button_name": "Reset",
+      "on_click": "formReset()"
+    }
+  ]
+}

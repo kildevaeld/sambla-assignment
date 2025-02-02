@@ -1,0 +1,8 @@
+export * from './editor'
+export { default as FormActionEditor } from './FormActionEditor.vue'
+export { default as NumberEditor } from './NumberEditor.vue'
+export { default as TextEditor } from './TextEditor.vue'
+export { default as TextAreaEditor } from './TextAreaEditor.vue'
+export { default as QuestionListEditor } from './QuestionListEditor.vue'
+export { default as SelectEditor } from './SelectEditor.vue'
+export { default as registry } from './registry'
