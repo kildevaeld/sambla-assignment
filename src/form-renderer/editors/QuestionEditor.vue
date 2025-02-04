@@ -105,9 +105,7 @@ const aria = { hint: 'hint', error: 'error', editor: 'editor' }
       </div>
       <div>
         <label>Validation</label>
-        <Expander
-          ><ValidationEditor :kind="store.store.type" v-model="(store.store as any).validation"
-        /></Expander>
+        <ValidationEditor :kind="store.store.type" v-model="(store.store as any).validation" />
       </div>
     </div>
   </div>

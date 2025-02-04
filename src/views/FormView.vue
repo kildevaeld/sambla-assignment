@@ -6,6 +6,7 @@ import { Checkbox, Divider, Flex, Segmented, TypographyText } from 'ant-design-v
 import { computed, onMounted, ref } from 'vue'
 import VueJsonPretty from 'vue-json-pretty'
 import { useRoute } from 'vue-router'
+import { notification } from 'ant-design-vue'
 
 const store = useFormsStore()
 const data = useFormDataStore()
@@ -31,6 +32,9 @@ function onChange(value: Record<string, unknown>) {
 
 function onSubmit(value: Record<string, unknown>) {
   console.log('Submit', value)
+  notification.open({
+    message: 'Form submitted',
+  })
 }
 </script>
 
